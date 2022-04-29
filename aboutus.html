@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAKRIWALA || ABOUT US</title>
+  
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*NAVIGATION BAR*/
+.navbar{
+   display: flex;
+    flex-direction:row;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+}
+
+#logo{
+   margin-left: 30px;
+    margin-top: 20px;
+}
+#logo h3{
+    width: 70px;
+    height: 70px;
+    font-weight: 900;
+    font-size: 40px;
+    text-shadow: 3px 3px 5px white;
+    color: white;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    
+
+  
+  
+}
+.navbar::before{
+    content: " ";
+   background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  
+
+}
+.navbar .marginlefthome{
+    margin-left: 750px;
+}
+
+.navbar ul li a{
+    display:block;
+    width: 160px;
+    border-radius: 25px;
+   
+   color: white;
+   font-weight: 900;
+    text-decoration: none;
+    padding: 6px;
+  margin-top: 25px;
+    margin-left: 0px;
+   
+    font-family: 'Chela One', cursive;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+
+}
+@media screen and (max-width: 1000px){
+    #logo{
+        margin-left: 20px;
+         margin-top: 20px;
+     }
+     #logo h3{
+        
+         font-size: 30px;
+         color: white;
+        
+     }
+    
+     .navbar::before{
+        
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 1;
+     
+     }
+     .navbar ul li{
+         list-style: none;
+         font-size: 15px;
+         
+     
+     }
+     .navbar .help{
+         display: none;
+     }
+
+     .navbar .marginlefthome{
+         margin-left: 170px;
+         margin-right: 0;
+     }
+     
+     .navbar ul li a{
+        
+         width: 100px;
+         border-radius: 10px;
+        
+       color: white;
+       margin-top: 25px;
+         margin-left: 0;
+        
+     }
+     
+    
+}
+@media screen and (max-width: 600px){
+    .navbar{
+       
+         flex-direction:row;
+
+       
+     }
+    #logo{
+        margin-left: 10px;
+         margin-top: 20px;
+     }
+     #logo h3{
+        
+         font-size: 20px;
+         color: white;
+         font-weight: 900;
+        
+     }
+    
+     .navbar::before{
+        
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 1;
+     
+     }
+     .navbar ul li{
+         list-style: none;
+         font-size: 12px;
+         
+     
+     }
+    
+     .navbar .marginlefthome{
+         margin-left: 70px;
+       
+     }
+     
+     .navbar ul li a{
+        
+         width: 100px;
+         border-radius: 10px;
+        
+       color: white;
+       margin-top: 26px;
+         margin-left: 0;
+       width: 80px;
+        
+     }
+   
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 120px;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    font-family: 'Reggae One', cursive;
+    
+    
+    }
+    #home::before{
+        content: " ";
+       background-image: url('homebg1.jpg');
+       background-position: center;
+       background-size: 100%;
+       background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    
+    }
+    #home h1{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+        margin-top: 20%;
+    }
+    
+    
+    #home p{
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    
+    }
+    #home button{
+        color: aliceblue;
+        background-color: black;
+        font-weight: bold;
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid snow;
+        border-radius: 15px;
+        
+    }
+    
+    #home button:hover{
+        background-color: wheat;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1000px){
+       
+            #home::before{
+              
+                top: 0px;
+                
+                opacity: 0.9;
+            
+            }
+            #home h1{
+                color: white;
+                font-weight: 900;
+                margin-top: 30%;
+
+                
+            }
+            
+            
+            #home p{
+            font-size: 0.9rem;
+           color: white;
+            font-weight: 600;
+            
+            }
+           
+        
+         
+        
+    }
+    @media screen and (max-width: 600px){
+        #home::before{
+              
+            top: 0%;
+          height: 48%;
+            opacity: 0.9;
+        
+        }
+        #home h1{
+            color: rgb(3, 3, 3);
+            font-weight: 900;
+          
+            font-size: 20px;
+            
+        }
+        
+        
+        #home p{
+        font-size: 0.9rem;
+       color: black;
+        font-weight: 600;
+        
+        }
+    }
+
+
+
+
+
+
+
+    .aboutus{
+    width: 100%;
+    height: 75vh;
+    margin-top: 300px;
+  
+
+}
+
+
+.aboutus h2{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 3px 2px gray;
+    font-weight: 700;
+}
+.aboutus p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    
+}
+.aboutus .aboutcontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.aboutus .aboutcontainer .aboutcard{
+    width: 430px;
+    height: 300px;
+    margin-left: 50px;
+    padding: 70px;
+   
+    padding-top: 10px;
+
+}
+.aboutus .aboutcontainer .aboutcard h3{
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+}
+.aboutus .aboutcontainer .aboutcard p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+.button{
+    margin-left: 700px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+   
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px){
+    .aboutus{
+        width: 100%;
+        height: 55vh;
+      
+       
+    
+    }
+    
+    
+    .aboutus h2{
+       
+        font-size: 40px;
+       
+    }
+    .aboutus p{
+       
+        line-height: 30px;
+        font-size: 18px;
+        
+    }
+    .aboutus .aboutcontainer{
+      
+        margin-top: 30px;
+    }
+    .aboutus .aboutcontainer .aboutcard{
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+        padding: 0px;
+       
+        padding-top: 0px;
+    
+    }
+    .aboutus .aboutcontainer .aboutcard h3{
+       
+        font-size: 20px;
+     
+    }
+    .aboutus .aboutcontainer .aboutcard p{
+        font-size: 13px;
+        line-height: 20px;
+      
+    }
+    .button{
+      
+        font-size: 15px;
+        margin-left: 300px;
+    }
+   
+}
+@media screen and (max-width: 600px){
+    .aboutus{
+        width: 100%;
+        height: 70vh;
+      margin-top: 90px;
+       
+    
+    }
+    
+    
+    .aboutus h2{
+       
+        font-size: 40px;
+       
+    }
+    .aboutus p{
+       
+        line-height: 20px;
+        font-size: 15px;
+        
+    }
+    .aboutus .aboutcontainer{
+      
+        margin-top: 30px;
+    }
+    .aboutus .aboutcontainer .aboutcard{
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+        padding: 0px;
+       
+        padding-top: 0px;
+    
+    }
+    .aboutus .aboutcontainer .aboutcard h3{
+       
+        font-size: 20px;
+     
+    }
+    .aboutus .aboutcontainer .aboutcard p{
+        font-size: 13px;
+        line-height: 20px;
+      
+    }
+    .button{
+      
+        font-size: 15px;
+        margin-left: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+.slides{
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+}
+.slides img{
+    width: 400px;
+    height: 400px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: 0.9}
+  to {opacity: 1}
+}
+
+
+
+.footer{
+    width: 100%;
+    color: black;
+    background-color: aliceblue;
+   
+}
+.footer h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+</style>
+<body>
+    
+    <nav id="navbar" class="navbar">
+      <div id="logo">
+        <h3>LAKRIWALA</h3>
+    
+    </div>
+     
+      <ul>
+          <li class="item"><a href="homepage.html" class="marginlefthome">HOME</a></li>
+          <li class="item"><a href="aboutus.html">About US</a></li>
+          <li class="item"><a href="projects.html">Services</a></li>
+          <li class="item"><a href="contactus.php">Contact US</a></li>
+         
+        
+         
+      </ul>
+
+  </nav>
+  
+  <section id="home">
+      <h1>#LAKRIWALA <br> SIMPLE AND CLASSY DESIGNS</h1>
+      
+  </section>
+
+
+
+
+ <section class="aboutus">
+  <h2>ABOUT US</h2>
+  <p>"Honesty is the best policy" is not just a quote for us, <br>
+
+    but our core philosophy and everything we do revolves around it.</p>
+    <div class="aboutcontainer">
+        <div class="aboutcard">
+          <h3>NO COMMISSIONS</h3>
+          <p>We never accept commissions from material vendors or contractors. This enables us to maintain transparency and take the right decisions for your project.</p>
+        </div>
+        <div class="aboutcard">
+          <h3>SIMPLE FEE STRUCTURE</h3>
+          <p>We do not charge on a percentage basis, so there are no surprises at the end of the project. We charge on <strong>square feet </strong> basis, so you know exactly what you're going to pay us right from the beginning.</p>
+        </div>
+        <div class="aboutcard">
+          <h3>HONEST COMMITMENT</h3>
+          <p>WE COMMIT and WE DELIVER.
+
+            We never make false commitments. We are very straightforward about what we can deliver and when we can deliver.</p>
+        </div>
+     
+    </div>
+ 
+ </section>
+ <a href="#" class="button">Contact us</a>
+ 
+
+
+ <section class="slides">
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="homebg1.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="logo.png" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="homebg1.jpg" style="width:100%">
+      
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+ </section>
+ <footer class="footer">
+    <h2>all @copyright rserved to LAKRIWALA</h2>
+  
+  </footer>
+</body>
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
+
+<!--
+https://www.pexels.com/search/furniture/
+https://www.neotecture.in/
+https://fluentdesignpdx.com/work.html
+-->

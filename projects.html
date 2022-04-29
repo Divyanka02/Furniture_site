@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAKRIWALA || PROJECTS</title>
+  
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*NAVIGATION BAR*/
+.navbar{
+   display: flex;
+    flex-direction:row;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+}
+
+#logo{
+   margin-left: 30px;
+    margin-top: 20px;
+}
+#logo h3{
+    width: 70px;
+    height: 70px;
+    font-weight: 900;
+    font-size: 40px;
+    text-shadow: 3px 3px 5px white;
+    color:white;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    
+
+  
+  
+}
+.navbar::before{
+    content: " ";
+   background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  
+
+}
+.navbar .marginlefthome{
+    margin-left: 750px;
+}
+
+.navbar ul li a{
+    display:block;
+    width: 160px;
+    border-radius: 25px;
+   
+   color: white;
+   font-weight: 900;
+    text-decoration: none;
+    padding: 6px;
+  margin-top: 25px;
+    margin-left: 0px;
+   
+    font-family: 'Chela One', cursive;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+
+}
+@media screen and (max-width: 1000px){
+    #logo{
+        margin-left: 20px;
+         margin-top: 20px;
+     }
+     #logo h3{
+        
+         font-size: 30px;
+         color: white;
+        
+     }
+    
+     .navbar::before{
+        
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 1;
+     
+     }
+     .navbar ul li{
+         list-style: none;
+         font-size: 15px;
+         
+     
+     }
+     .navbar .help{
+         display: none;
+     }
+
+     .navbar .marginlefthome{
+         margin-left: 170px;
+         margin-right: 0;
+     }
+     
+     .navbar ul li a{
+        
+         width: 100px;
+         border-radius: 10px;
+        
+       color: white;
+       margin-top: 25px;
+         margin-left: 0;
+        
+     }
+     
+    
+}
+@media screen and (max-width: 600px){
+    .navbar{
+       
+         flex-direction:row;
+
+       
+     }
+    #logo{
+        margin-left: 10px;
+         margin-top: 20px;
+     }
+     #logo h3{
+        
+         font-size: 20px;
+         color: white;
+         font-weight: 900;
+        
+     }
+    
+     .navbar::before{
+        
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 1;
+     
+     }
+     .navbar ul li{
+         list-style: none;
+         font-size: 12px;
+         
+     
+     }
+    
+     .navbar .marginlefthome{
+         margin-left: 70px;
+       
+     }
+     
+     .navbar ul li a{
+        
+         width: 100px;
+         border-radius: 10px;
+        
+       color: white;
+       margin-top: 26px;
+         margin-left: 0;
+       width: 80px;
+        
+     }
+   
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 120px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: 'Reggae One', cursive;
+    
+    
+    
+    }
+    #home::before{
+        content: " ";
+       background-image: url('homebg1.jpg');
+       background-position: center;
+       background-size: 100%;
+       background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    
+    }
+   
+    
+    #home button{
+        color: aliceblue;
+        background-color: black;
+        
+        border: 2px solid snow;
+        border-radius: 2px;
+
+        
+    }
+    
+    #home button:hover{
+        background-color: wheat;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1000px){
+       
+            #home::before{
+              
+                top: 0px;
+                
+                opacity: 0.9;
+            
+            }
+          
+        
+         
+        
+    }
+    @media screen and (max-width: 600px){
+      #home{
+        height: 60vh;
+      } 
+      #home::before{
+              
+            top: 0%;
+          height: 48%;
+            opacity: 0.9;
+        
+        }
+       
+        
+    }
+
+
+
+
+
+
+
+
+    
+.line{
+    width: 90%;
+    height: 2px;
+    border-radius: 20px;
+    margin-left: 50px;
+    background-color: black;
+}
+.ourprojects{
+    width: 100%;
+    height: 100vh;   
+    margin-top: 20px; 
+}
+.ourprojects h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+}
+.ourprojects a{
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+
+
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-top: 60px;
+
+}
+.projectcard{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 40px;
+    margin-right: 100px;
+}
+.projectcontainer{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+   
+}
+
+.projectcard img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;   
+}
+.cardcontent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px ;
+   
+    opacity: 1;
+    transition: 0.7s;
+  
+    
+}
+.cardcontent .bx{
+    font-size: 60px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+  
+}
+.cardcontent .bx:hover{
+   
+   color: rgba(255, 0, 0, 0.714);
+}
+
+.btn{
+
+    width: 120px;
+    height: 80px;
+   
+    margin-bottom: 20px;
+}
+.projectcard:hover .cardcontent{
+   /* opacity: 0;*/
+    margin-top: 0px;
+}
+.projectcard p{
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 20px;
+}
+@media screen and (max-width: 1000px){
+    .ourprojects{
+      
+        height: 240vh;   
+        margin-top: 50px;
+      
+    }
+    .ourprojects h1{
+       
+        font-size: 30px;
+       
+    }
+    .ourprojects a{
+        margin-left: 50px;
+        font-size: 15px;
+      
+       
+    }
+    
+    
+    
+    .projects{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .projectcard{
+       
+ 
+        margin-bottom: 150px;
+    }
+   
+    .projectcard p{
+      
+        font-size: 18px;
+      
+    }
+}
+@media screen and (max-width: 600px){
+    .line{
+        margin-left: 20px;
+    }
+    .ourprojects{
+      
+        height: 270vh;   
+        margin-top: 50px;
+      
+    }
+    .ourprojects h1{
+       
+        font-size: 30px;
+       
+    }
+    .ourprojects a{
+        margin-left: 20px;
+        font-size: 15px;
+      
+       
+    }
+    
+    
+    
+    .projects{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .projectcard{
+       
+ 
+        margin-bottom: 100px;
+    }
+   
+    .projectcard p{
+      
+        font-size: 15px;
+      
+    }
+}
+
+
+
+
+
+
+
+.slideshowgallary{
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px){
+    .slideshowgallary{
+    width: 100%;
+    height: 70vh;
+   
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: 0;
+}
+.mySlides img{
+    height: 600px;
+   margin-left: 10px;
+}
+@media screen and (max-width: 1000px){
+    .mySlides img{
+        width: 100%;
+       
+    height: 500px;
+}   
+}
+@media screen and (max-width: 600px){
+    .mySlides img{
+        width: 100%;
+       
+    height: 300px;
+}   
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+.column img{
+    height: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+.footer{
+    width: 100%;
+    color: black;
+    background-color: aliceblue;
+   
+}
+.footer h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+</style>  
+<body>
+    
+    <nav id="navbar" class="navbar">
+      <div id="logo">
+        <h3>LAKRIWALA</h3>
+    
+    </div>
+     
+      <ul>
+        <li class="item"><a href="homepage.html" class="marginlefthome">HOME</a></li>
+        <li class="item"><a href="aboutus.html">About US</a></li>
+        <li class="item"><a href="projects.html">Services</a></li>
+        <li class="item"><a href="contactus.php">Contact US</a></li>
+       
+      </ul>
+
+  </nav>
+  
+  <section id="home">
+      
+      <button class="btn">ORDER NOW</button>
+  </section>
+
+  
+
+
+  
+  <section class="ourprojects">
+    <h1>Our Recent Interior Design Projects</h1>
+    <a href="#">View Our Recent Projects Here —></a>
+    <div class="projects">
+
+    <div class="projectcard">
+      <div class="projectcontainer">
+       <img src="homebg1.jpg">
+        <div class="cardcontent">
+            <a class="btn"> <i class='bx bx-play-circle'></i></a>
+            
+        </div>
+      </div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dicta?</p>
+    </div>
+    <div class="projectcard">
+      <div class="projectcontainer">
+       <img src="homebg1.jpg">
+        <div class="cardcontent">
+            <a class="btn"> <i class='bx bx-play-circle'></i></a>
+            
+        </div>
+      </div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dicta?</p>
+    </div>
+    <div class="projectcard">
+      <div class="projectcontainer">
+       <img src="homebg1.jpg">
+        <div class="cardcontent">
+            <a class="btn"> <i class='bx bx-play-circle'></i></a>
+            
+        </div>
+      </div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dicta?</p>
+    </div>
+  </div>
+  </section>
+  <div class="line"></div>
+
+
+<section class="slideshowgallary">
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="homebg1.jpg" style="width:100%;">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="logo.png" style="width:100%;">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="homebg1.jpg" style="width:100%;">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="logo.png" style="width:100%;">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="homebg1.jpg" style="width:100%;">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="logo.png" style="width:100%;">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="homebg1.jpg" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="logo.png" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="homebg1.jpg" style="width:100%" onclick="currentSlide(3)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="logo.png" style="width:100%" onclick="currentSlide(4)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="homebg1.jpg" style="width:100%" onclick="currentSlide(5)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="logo.png" style="width:100%" onclick="currentSlide(6)">
+          </div>
+        </div>
+      </div>
+</section>
+
+<footer class="footer">
+  <h2>all @copyright rserved to LAKRIWALA</h2>
+
+</footer>
+</body>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</html>
+
+<!--
+https://www.pexels.com/search/furniture/
+https://www.neotecture.in/
+https://fluentdesignpdx.com/work.html
+-->
